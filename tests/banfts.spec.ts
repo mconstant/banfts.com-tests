@@ -6,6 +6,6 @@ test('get started link', async ({ page }) => {
   // Click the Auth with signature link.
   await page.getByText('Auth with signature').click();
 
-  // Expects page to have a heading with the name of Installation.
+  // Expects page to have 'Authenticate to Banfts!' text.
   await expect(page.getByText('Authenticate to Banfts!')).toBeVisible();
 });
